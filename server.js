@@ -6,7 +6,7 @@ const PORT = 8080;
 const app = express();
 app.get('/:meetingID', async (req, res) => {
   try {
-    const files = await fs.readdirSync(`${process.env.LEARNING_DASH_BOARD_PATH}/${req.params.meetingID}`)
+    const files = await fs.readdirSync(`/usr/src/app/learning-dashboard/${req.params.meetingID}`)
     await  res.send(files);
   } catch (e) {
     res.sendStatus(404);
