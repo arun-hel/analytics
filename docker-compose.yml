@@ -1,0 +1,7 @@
+version: '3.2'
+services:
+    analytics:
+        container_name: analytics-api
+        image: analytics-api
+        ports:
+            - "3005:8080"

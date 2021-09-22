@@ -2,7 +2,6 @@ const fs = require('fs')
 const express = require('express');
 require('dotenv').config()
 const PORT = 8080;
-const HOST = 'localhost';
 
 const app = express();
 app.get('/:meetingID', async (req, res) => {
@@ -14,5 +13,6 @@ app.get('/:meetingID', async (req, res) => {
   }
 });
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+app.listen(PORT, () => {
+    console.log("Server running on port 3000");
+   });
