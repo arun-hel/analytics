@@ -1,1 +1,1 @@
-LEARNING_DASH_BOARD_PATH='/var/bigbluebutton/learning-dashboard/'
+BASE_URL=https://analytics.url.com

@@ -6,6 +6,6 @@ services:
         container_name: analytics-api
         volumes:
             - /var/bigbluebutton/learning-dashboard/:/usr/src/app/learning-dashboard
-        image: analytics-api
+        image: analytics:v1
         ports:
             - "3006:8080"
